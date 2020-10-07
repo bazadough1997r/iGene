@@ -3,12 +3,7 @@
 	margin: auto;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
-}
-general styling for 
-.container {
-	height: 100vh;
-	width: 100%;
-}
+} 
 
 .upperPanel {
 	width: 100%;
@@ -26,10 +21,11 @@ general styling for
 .search {
 	width: 26.5px;
 	cursor: pointer;
-
 }
+
 .searcharea input {
 	height: 30px;
+	color: #1f4c73;
 }
 
 .searcharea{
@@ -51,7 +47,6 @@ form.searcharea button {
   width: 20%;
   padding: 10px;
   background: white;
-  color: white;
   font-size: 17px;
   border: 1px solid #1f4c73;
   border-left: none;
@@ -62,17 +57,31 @@ form.searcharea button:hover {
   background: #1f4c73;
 }
 
-form.searcharea::after {
+.profile {
+	cursor: pointer;
+	height: 46px;
+	width: 43px;
+	border-color: lightgrey;
+	display: flex;
+	background-color: white;
+}
+ .profile:hover {
+    background: lightgrey;
+ }
+/*form.searcharea::after {
   content: "";
   clear: both;
   display: table;
-}
+}*/
 
 .navbar {
   overflow: hidden; 
   color: #1f4c73;
+  z-index: 1; /*show menu above content*/
+  margin: auto;
 }
 
+/*unnested menu parts*/
 .navbar a {
   float: left;
   font-size: 16px;
@@ -88,6 +97,7 @@ form.searcharea::after {
   overflow: hidden;
 }
 
+/*nested menu parts*/
 .subnav .subnavbtn {
   font-size: 16px;  
   border: none;
@@ -96,7 +106,6 @@ form.searcharea::after {
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
   font-weight: bold
 }
 
@@ -114,9 +123,7 @@ form.searcharea::after {
  }
 
 .subnav-content a {
-  float: left;
   color: white;
-  text-decoration: none;
 }
 
 .subnav-content a:hover {
@@ -125,16 +132,15 @@ form.searcharea::after {
 }
 
 .subnav:hover .subnav-content {
-  display: block;
+  display: grid;
 }
-/*///////////////////////////////////////////////*/
 
 .mainpic {
   margin-top: 20px;
   position: relative;
   text-align: center;
   color: white;
-  width:600px;
+  width:900px;
   height: 600px;
 }
 .centered {
@@ -142,28 +148,13 @@ form.searcharea::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 2px #1f4c73;
 }
 
-.content button {
-	font-size: 20px;
-	font-weight: bold;
-	/*margin-top: 15px;
-	margin-bottom: 15px;*/
-	color: #1f4c73;
-}
-
-.content a {
-	text-decoration: none;
-	font-size: 60px;
-	font-weight: bold;
-	/*margin-top: 15px;
-	margin-bottom: 15px;*/
-	color: #1f4c73;
-}
-
-.socialmedia {
-	text-decoration: none;
-	color: #1f4c73;
+.social {
 	font-size: 14px;
 }
 
@@ -171,4 +162,64 @@ header {
 	height: 2.5cm;
 	background-color: lightgrey;
 }
+
+footer {
+	margin-top: 20px;
+	text-decoration: none;
+	display: flex;
+	height: 2.5cm;
+	background-color: lightgrey;
+}
+
+#register {
+    visibility: hidden;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding:10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    margin: auto;
+    margin: -20px 0 50px;
+}
+
+#register h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+#register p {
+	font-size: 14;
+	font-weight: bold;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+#register span {
+	font-size: 12px;
+}
+
+#register a {
+	color: blue;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+ 
+#register .container {
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 14px 28px red, 0 10px 10px pink;
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+
 
