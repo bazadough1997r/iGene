@@ -55,9 +55,48 @@
 			</form>
 
 			<form id="yourprofile" class="login" action="">
-            <button> <a href="createAccount.html"><img src="media/login.png" alt="profile" class="profile"></a></button>
+            <button><img src="media/login.png" alt="profile" class="profile" onclick="account()"></button>
 			</form>
 		</div>
+<!--           -->
+<div class="register" id="register">
+  <div class="signup">
+    <div action="#">
+      <h1>Create Account</h1>
+      <span>use your email for registration:</span><br>
+      <input type="text" name="Name"/>
+      <input type="email" name="Email"/>
+      <input type="password" name="Password"/>
+      <button>Sign Up</button>
+    </div>
+  </div>
+  <div class="signin">
+    <div action="#">
+      <h1>Sign In</h1>
+      <span>use your Account:</span>
+      <input type="email" name="Email"/>
+      <input type="password" name="Password">
+      <button>Sign In</button><br>
+      <a href="#" style="color: white">Forgot your password?</a><br>
+      
+    </div>
+  </div>
+  <div class="overlayContainer">
+    <div class="overlay">
+      <div class="overlaypanelleft">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected please login with your personal info</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlaypanelright">
+        <h1>Hello, nerd!</h1>
+        <p>Enter your personal details and start learning with iGene Simulations!</p>
+        <button class="ghost" id="signUp">Sign Up</button>
+      </div>
+    </div>
+  </div>
+ </div>
+<!--           -->
   </header>	           
 
 
@@ -68,8 +107,21 @@
 
  <footer>
     <div class="socialmedia">
-    	<p class="social"><a href="https://www.facebook.com/igene.jordan" target="_blank">FACEBOOK</a></p>
-    	<p class="social"><a href="https://www.instagram.com/igene.jo/" target="_blank">INSTAGRAM</a></p>
+    	<h3>iGene Simulations</h3>
+      <br>
+      <form>
+        <h4>Subscribe Form</h4>
+        <div class="container">
+         <input id="subbtn" type="text" placeholder="Email address" name="email" required>
+        </div>
+        <div class="container">
+         <input id="subscribe" type="subscribe" value="Subscribe" onclick="fillit()">
+        </div>
+    </form>
+
+    	<p class="social"><a href="https://www.facebook.com/igene.jordan" target="_blank">FACEBOOK</a></p> 
+      <p class="social"><a href="https://www.instagram.com/igene.jo/" target="_blank">INSTAGRAM</a></p>
+    	<h6>©2020 by iGene Simulations.</h6>
     </div>
  </footer>
 

@@ -1,15 +1,22 @@
+//simulations alert
 document.getElementById("availability").addEventListener("click", available);
 
 function available() {
 	alert("Simulations are not available right now!");
 }
 
-// show rigester page
-document.getElementById("yourprofile").addEventListener("click", registerform);
-
-function registerform(){
-	console.log("account");
-document.getElementById("register").style.visibility = "visible";
-   console.log("account2");
-
+//subscribe alert 
+function fillit() {
+	var empty = document.getElementById("subbtn").value;
+	if (empty == "") {
+		alert("you have to write your email first, please!")
+	} else {
+		alert("You are now subscribed!")
+	}
 }
+
+//registration form visibilty
+ function account() { 
+    document.getElementById("register").style.visibility = "visible"; 
+} 
+
