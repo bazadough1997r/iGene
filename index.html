@@ -43,7 +43,7 @@
                 <div class="subnav-content">
                  <a href="ourStory.html">our story</a> <br>
                  <a href="ourMission.html">our mission</a> <br>
-                 <a href="ourVision.html">our vision</a><br>
+                 <a href="ourVission.html">our vision</a><br>
                 </div>
               </div> 
 
@@ -60,7 +60,7 @@
 		</div>
 <!--           -->
 <div class="register" id="register">
-  <div class="signup">
+  <div class="form-container sign-up-container">
     <div action="#">
       <h1>Create Account</h1>
       <span>use your email for registration:</span><br>
@@ -70,25 +70,25 @@
       <button>Sign Up</button>
     </div>
   </div>
-  <div class="signin">
+  <div class="form-container sign-in-container">
     <div action="#">
       <h1>Sign In</h1>
       <span>use your Account:</span>
       <input type="email" name="Email"/>
       <input type="password" name="Password">
       <button>Sign In</button><br>
-      <a href="#" style="color: white">Forgot your password?</a><br>
+      <a href="#">Forgot your password?</a><br>
       
     </div>
   </div>
-  <div class="overlayContainer">
+  <div class="overlay-container">
     <div class="overlay">
-      <div class="overlaypanelleft">
+      <div class="overlay-panel overlay-left">
         <h1>Welcome Back!</h1>
         <p>To keep connected please login with your personal info</p>
         <button class="ghost" id="signIn">Sign In</button>
       </div>
-      <div class="overlaypanelright">
+      <div class="overlay-panel overlay-right">
         <h1>Hello, nerd!</h1>
         <p>Enter your personal details and start learning with iGene Simulations!</p>
         <button class="ghost" id="signUp">Sign Up</button>
@@ -103,24 +103,41 @@
             <div class="mainpic">
              <img src="media/mainpic.jpg" alt="Microscope" style="width:100%;">
              <div class="centered">Science Simulations!</div>
+             <a href="sim.html" target="_blank"><button id="Explore" class="cent">Explore Sims!</button></a>
+            </div>
 
+            <div class="mainpic">
+             <img src="media/second.jpg" alt="Experiment" style="width:100%;">
+             <div class="centered">"The science of today is the technology of tomorrow."</div>
+            </div>
 
+            <div id="icons">
+              <a href="biology.html" target="_blank">
+               <button>BIOLOGY</button> 
+              </a>
+              <a href="chemistry.html" target="_blank">
+               <button>CHEMISTRY</button> 
+              </a>
+              <a href="physics.html" target="_blank">
+               <button>PHYSICS</button> 
+              </a>
+            </div>
+          <br>
+            <div id="slogan">
+              <h2>Integration of services is, HOPE.</h2>
+            </div>
+<br>
  <footer>
     <div class="socialmedia">
     	<h3>iGene Simulations</h3>
       <br>
       <form>
-        <h4>Subscribe Form</h4>
         <div class="container">
          <input id="subbtn" type="text" placeholder="Email address" name="email" required>
-        </div>
-        <div class="container">
          <input id="subscribe" type="subscribe" value="Subscribe" onclick="fillit()">
         </div>
     </form>
-
-    	<p class="social"><a href="https://www.facebook.com/igene.jordan" target="_blank">FACEBOOK</a></p> 
-      <p class="social"><a href="https://www.instagram.com/igene.jo/" target="_blank">INSTAGRAM</a></p>
+      <br>
     	<h6>©2020 by iGene Simulations.</h6>
     </div>
  </footer>

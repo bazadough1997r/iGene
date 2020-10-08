@@ -1,6 +1,6 @@
 //simulations alert
 document.getElementById("availability").addEventListener("click", available);
-
+document.getElementById("Explore").addEventListener("click", available);
 function available() {
 	alert("Simulations are not available right now!");
 }
@@ -18,5 +18,6 @@ function fillit() {
 //registration form visibilty
  function account() { 
     document.getElementById("register").style.visibility = "visible"; 
+    console.log("test");
 } 
 
