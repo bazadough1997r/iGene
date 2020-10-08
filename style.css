@@ -137,7 +137,8 @@ form.searcharea button:hover {
   color: white;
   width:900px;
   height: 600px;
-  z-index: 0;
+  /*z-index: 0;*/
+  z-index: -1;
   margin-bottom: 20px; 
 }
 .centered {
@@ -157,7 +158,8 @@ form.searcharea button:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   cursor: pointer;
-  z-index: 0;
+  /*z-index: 0;*/
+  z-index: 1;
 }
 
 header {
@@ -232,7 +234,8 @@ footer {
     align-items: center;
     font-size: 20px;
     color: white;
-    z-index: 2;
+    /*z-index: 2;*/
+    z-index: -1;
     }
 
 #register h1 {
